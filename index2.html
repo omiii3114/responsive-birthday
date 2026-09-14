@@ -1,0 +1,1985 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Khushu ❤️</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#050509;
+    color:white;
+    font-family:'Poppins',sans-serif;
+    overflow-x:hidden;
+}
+
+/* BACKGROUND */
+
+body::before{
+    content:"";
+    position:fixed;
+    width:500px;
+    height:500px;
+    background:#571447;
+    filter:blur(160px);
+    opacity:.25;
+    top:-150px;
+    left:-150px;
+    z-index:-2;
+}
+
+body::after{
+    content:"";
+    position:fixed;
+    width:500px;
+    height:500px;
+    background:#351a72;
+    filter:blur(170px);
+    opacity:.22;
+    bottom:-200px;
+    right:-150px;
+    z-index:-2;
+}
+
+/* PROGRESS BAR */
+
+.progress{
+    position:fixed;
+    top:0;
+    left:0;
+    width:0%;
+    height:4px;
+    background:linear-gradient(90deg,#ff4f9a,#a96cff,#ff174f);
+    z-index:9999;
+}
+
+/* INTRO */
+
+.intro{
+    position:fixed;
+    inset:0;
+    background:
+        radial-gradient(circle at 50% 40%,#39133a 0%,#100813 35%,#030305 75%);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    z-index:5000;
+    transition:1.2s ease;
+}
+
+.intro.hide{
+    opacity:0;
+    visibility:hidden;
+}
+
+.intro-content{
+    padding:30px;
+}
+
+.intro-small{
+    letter-spacing:5px;
+    font-size:12px;
+    color:#dca6c9;
+    margin-bottom:20px;
+}
+
+.intro h1{
+    font-family:'Cormorant Garamond',serif;
+    font-size:clamp(65px,12vw,145px);
+    line-height:.85;
+    background:linear-gradient(120deg,#fff,#ffb4d7,#c98aff);
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.intro-name{
+    font-size:18px;
+    letter-spacing:5px;
+    margin-top:20px;
+    color:#ddd;
+}
+
+.open-btn{
+    margin-top:45px;
+    padding:15px 34px;
+    border:none;
+    border-radius:50px;
+    background:linear-gradient(90deg,#8d275e,#c14c9b);
+    color:white;
+    font-size:15px;
+    cursor:pointer;
+    box-shadow:0 0 35px #9d286855;
+    transition:.4s;
+}
+
+.open-btn:hover{
+    transform:scale(1.07);
+    box-shadow:0 0 55px #db62b988;
+}
+
+/* COMMON */
+
+section{
+    position:relative;
+    overflow:hidden;
+}
+
+.container{
+    width:min(1100px,90%);
+    margin:auto;
+}
+
+.reveal{
+    opacity:0;
+    transform:translateY(70px);
+    transition:1.1s ease;
+}
+
+.reveal.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.small-title{
+    letter-spacing:5px;
+    text-transform:uppercase;
+    color:#c982ad;
+    font-size:12px;
+    margin-bottom:15px;
+}
+
+.title{
+    font-family:'Cormorant Garamond',serif;
+    font-size:clamp(50px,7vw,90px);
+    line-height:.95;
+}
+
+.subtitle{
+    color:#b9b4bd;
+    max-width:600px;
+    line-height:1.9;
+    margin-top:25px;
+}
+
+/* HERO */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    background:
+        linear-gradient(#05050966,#050509),
+        url("photo1.jpeg") center/cover;
+}
+
+.hero-overlay{
+    position:absolute;
+    inset:0;
+    background:
+        radial-gradient(circle at center,transparent 10%,#050509 90%);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    padding:30px;
+}
+
+.hero-heart{
+    font-size:45px;
+    animation:pulse 2s infinite;
+}
+
+@keyframes pulse{
+    50%{
+        transform:scale(1.25);
+    }
+}
+
+.hero h2{
+    font-family:'Cormorant Garamond',serif;
+    font-size:clamp(60px,10vw,125px);
+    line-height:.85;
+    margin:20px 0;
+    text-shadow:0 0 40px #ff4c9a66;
+}
+
+.hero p{
+    color:#ddd;
+    font-size:16px;
+    letter-spacing:1px;
+}
+
+.scroll-text{
+    margin-top:70px;
+    color:#aaa;
+    font-size:11px;
+    letter-spacing:4px;
+    animation:bounce 2s infinite;
+}
+
+@keyframes bounce{
+    50%{
+        transform:translateY(10px);
+    }
+}
+
+/* LOVE SECTION */
+
+.love-section{
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    text-align:center;
+    background:
+        radial-gradient(circle at center,#35152e55,transparent 60%);
+}
+
+.love-card{
+    max-width:800px;
+    margin:auto;
+    padding:70px 30px;
+    border:1px solid #ffffff15;
+    border-radius:30px;
+    background:#ffffff04;
+    backdrop-filter:blur(10px);
+    box-shadow:0 30px 100px #000;
+}
+
+.love-card .heart{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.love-card h2{
+    font-family:'Cormorant Garamond',serif;
+    font-size:65px;
+}
+
+.love-card p{
+    color:#bbb;
+    line-height:2;
+    max-width:600px;
+    margin:25px auto 0;
+}
+
+/* MEMORY */
+
+.memory{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    padding:100px 0;
+}
+
+.memory-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:70px;
+    align-items:center;
+}
+
+.memory:nth-of-type(even) .memory-grid{
+    direction:rtl;
+}
+
+.memory:nth-of-type(even) .memory-text{
+    direction:ltr;
+}
+
+.memory-photo{
+    position:relative;
+    height:650px;
+    overflow:hidden;
+    border-radius:25px;
+    box-shadow:0 30px 100px #000;
+    border:1px solid #ffffff18;
+}
+
+.memory-photo img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:1.2s ease;
+}
+
+.memory-photo:hover img{
+    transform:scale(1.08);
+}
+
+.photo-glow{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(transparent 50%,#000b);
+}
+
+.memory-number{
+    font-family:'Cormorant Garamond',serif;
+    font-size:150px;
+    color:#ffffff08;
+    position:absolute;
+    top:-45px;
+    left:0;
+}
+
+.memory-text{
+    position:relative;
+}
+
+.memory-text h2{
+    font-family:'Cormorant Garamond',serif;
+    font-size:65px;
+    line-height:.95;
+}
+
+.memory-text p{
+    color:#aaa;
+    line-height:2;
+    margin-top:25px;
+}
+
+.quote{
+    margin-top:35px;
+    padding-left:20px;
+    border-left:2px solid #b84681;
+    color:#e9b5cf;
+    font-family:'Cormorant Garamond',serif;
+    font-size:25px;
+}
+
+/* STORY */
+
+.story{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    padding:100px 0;
+    background:
+        linear-gradient(#08050b,#0c0610,#050509);
+}
+
+.story-center{
+    text-align:center;
+    max-width:900px;
+    margin:auto;
+}
+
+.story-line{
+    font-family:'Cormorant Garamond',serif;
+    font-size:clamp(45px,7vw,85px);
+    line-height:1.1;
+    margin:35px 0;
+}
+
+.story-line span{
+    color:#dd79ad;
+}
+
+.story-small{
+    color:#8e8992;
+    line-height:2;
+}
+
+/* SPECIAL */
+
+.special{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    padding:100px 0;
+}
+
+.special-heading{
+    text-align:center;
+    margin-bottom:70px;
+}
+
+.special-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.special-card{
+    padding:45px 30px;
+    min-height:280px;
+    border:1px solid #ffffff12;
+    border-radius:25px;
+    background:linear-gradient(145deg,#ffffff07,#ffffff02);
+    transition:.5s;
+}
+
+.special-card:hover{
+    transform:translateY(-12px);
+    border-color:#c9519066;
+    box-shadow:0 25px 70px #7d1d5140;
+}
+
+.special-icon{
+    font-size:40px;
+    margin-bottom:25px;
+}
+
+.special-card h3{
+    font-family:'Cormorant Garamond',serif;
+    font-size:34px;
+}
+
+.special-card p{
+    color:#999;
+    line-height:1.8;
+    margin-top:15px;
+}
+
+/* FULL PHOTO */
+
+.full-photo{
+    height:100vh;
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.full-photo::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(#05050933,#050509cc);
+}
+
+.full-photo-content{
+    position:relative;
+    z-index:2;
+    text-align:center;
+    padding:30px;
+}
+
+.full-photo-content h2{
+    font-family:'Cormorant Garamond',serif;
+    font-size:clamp(60px,9vw,120px);
+}
+
+.full-photo-content p{
+    margin-top:20px;
+    color:#ddd;
+    font-size:18px;
+}
+
+/* LETTER */
+
+.letter-section{
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:100px 20px;
+}
+
+.letter{
+    max-width:750px;
+    width:100%;
+    padding:65px;
+    background:linear-gradient(145deg,#160c18,#0c0810);
+    border:1px solid #ffffff15;
+    border-radius:25px;
+    box-shadow:0 40px 120px #000;
+}
+
+.letter-top{
+    color:#d56b9f;
+    letter-spacing:4px;
+    font-size:11px;
+    margin-bottom:30px;
+}
+
+.letter h2{
+    font-family:'Cormorant Garamond',serif;
+    font-size:65px;
+    margin-bottom:30px;
+}
+
+.letter-text{
+    color:#bbb;
+    line-height:2;
+    min-height:170px;
+}
+
+.signature{
+    margin-top:35px;
+    color:#e69bc1;
+    font-family:'Cormorant Garamond',serif;
+    font-size:28px;
+}
+
+/* DOUBLE PHOTO */
+
+.double-photo{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    padding:100px 0;
+}
+
+.double-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.double-photo-card{
+    height:650px;
+    border-radius:25px;
+    overflow:hidden;
+    position:relative;
+    border:1px solid #ffffff15;
+}
+
+.double-photo-card:first-child{
+    transform:translateY(50px);
+}
+
+.double-photo-card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:1s;
+}
+
+.double-photo-card:hover img{
+    transform:scale(1.08);
+}
+
+.double-caption{
+    position:absolute;
+    bottom:25px;
+    left:25px;
+    right:25px;
+    z-index:2;
+}
+
+.double-caption span{
+    background:#0009;
+    backdrop-filter:blur(10px);
+    padding:10px 18px;
+    border-radius:30px;
+    font-size:12px;
+}
+
+/* DREAM */
+
+.dream{
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    text-align:center;
+    background:
+        radial-gradient(circle at 50% 50%,#30174c55,transparent 65%);
+}
+
+.dream-content{
+    max-width:850px;
+    margin:auto;
+}
+
+.dream h2{
+    font-family:'Cormorant Garamond',serif;
+    font-size:clamp(55px,8vw,100px);
+    line-height:1;
+}
+
+.dream p{
+    margin:30px auto;
+    max-width:650px;
+    color:#aaa;
+    line-height:2;
+}
+
+.dream-word{
+    display:inline-block;
+    margin:8px;
+    padding:10px 20px;
+    border-radius:30px;
+    border:1px solid #ffffff14;
+    color:#d8abc4;
+}
+
+/* CAKE */
+
+.cake-section{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:100px 20px;
+}
+
+.cake-area h2{
+    font-family:'Cormorant Garamond',serif;
+    font-size:70px;
+}
+
+.cake-area p{
+    color:#aaa;
+    margin:20px 0 60px;
+}
+
+.cake{
+    width:260px;
+    height:150px;
+    background:linear-gradient(#b84572,#721d45);
+    margin:80px auto 0;
+    border-radius:15px 15px 25px 25px;
+    position:relative;
+    box-shadow:0 30px 80px #000;
+}
+
+.cake::before{
+    content:"";
+    position:absolute;
+    top:-35px;
+    left:0;
+    width:260px;
+    height:55px;
+    background:linear-gradient(#ffb3ce,#c34e7f);
+    border-radius:50%;
+}
+
+.cake::after{
+    content:"";
+    position:absolute;
+    top:5px;
+    left:0;
+    width:260px;
+    height:25px;
+    background:#ffcee0;
+    border-radius:50%;
+}
+
+.candle{
+    width:18px;
+    height:75px;
+    background:linear-gradient(90deg,#eee,#ff9fc4,#fff);
+    position:absolute;
+    top:-100px;
+    left:121px;
+    z-index:3;
+    border-radius:5px;
+}
+
+.flame{
+    width:24px;
+    height:35px;
+    background:#ffbd45;
+    border-radius:50%;
+    position:absolute;
+    top:-35px;
+    left:-3px;
+    box-shadow:0 0 35px #ff9d2f;
+    animation:flame 1s infinite alternate;
+}
+
+@keyframes flame{
+    from{
+        transform:scale(.9) rotate(-3deg);
+    }
+
+    to{
+        transform:scale(1.15) rotate(3deg);
+    }
+}
+
+/* COUPLE */
+
+.couple{
+    min-height:80vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.couple h2{
+    font-family:'Cormorant Garamond',serif;
+    font-size:clamp(70px,10vw,140px);
+    background:linear-gradient(90deg,#fff,#ff91c5,#a778ff,#fff);
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.couple p{
+    margin-top:25px;
+    color:#999;
+    letter-spacing:3px;
+}
+
+/* FINAL PHOTO */
+
+.final-photo{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:100px 20px;
+}
+
+.final-photo-box{
+    width:min(800px,100%);
+    height:750px;
+    position:relative;
+    overflow:hidden;
+    border-radius:30px;
+    border:1px solid #ffffff18;
+    box-shadow:0 40px 120px #000;
+}
+
+.final-photo-box img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.final-photo-overlay{
+    position:absolute;
+    inset:0;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    padding:45px;
+    background:linear-gradient(transparent 40%,#050509ee);
+}
+
+.final-photo-overlay h2{
+    font-family:'Cormorant Garamond',serif;
+    font-size:70px;
+}
+
+.final-photo-overlay p{
+    color:#ccc;
+    margin-top:10px;
+}
+
+/* FINAL */
+
+.final{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:80px 20px;
+    background:
+        radial-gradient(circle at center,#43153566,transparent 65%);
+}
+
+.final-content{
+    max-width:900px;
+}
+
+.final-heart{
+    font-size:70px;
+    animation:pulse 2s infinite;
+}
+
+.final h2{
+    font-family:'Cormorant Garamond',serif;
+    font-size:clamp(65px,10vw,130px);
+    line-height:.9;
+    margin:30px 0;
+}
+
+.final p{
+    color:#aaa;
+    line-height:2;
+}
+
+.final-sign{
+    margin-top:50px;
+    font-family:'Cormorant Garamond',serif;
+    font-size:35px;
+    color:#ec9dc3;
+}
+
+/* FOOTER */
+
+footer{
+    padding:35px 20px;
+    text-align:center;
+    color:#666;
+    font-size:12px;
+    border-top:1px solid #ffffff08;
+}
+
+/* FLOATING HEARTS */
+
+.floating-heart{
+    position:fixed;
+    bottom:-30px;
+    font-size:18px;
+    pointer-events:none;
+    animation:floatHeart 6s linear forwards;
+    z-index:1000;
+    opacity:.7;
+}
+
+@keyframes floatHeart{
+
+    0%{
+        transform:translateY(0) rotate(0);
+        opacity:0;
+    }
+
+    15%{
+        opacity:.8;
+    }
+
+    100%{
+        transform:translateY(-110vh) rotate(360deg);
+        opacity:0;
+    }
+}
+
+/* CLICK HEART */
+
+.click-heart{
+    position:fixed;
+    pointer-events:none;
+    font-size:25px;
+    animation:clickHeart 1s forwards;
+    z-index:9999;
+}
+
+@keyframes clickHeart{
+
+    0%{
+        opacity:1;
+        transform:translate(-50%,-50%) scale(.5);
+    }
+
+    100%{
+        opacity:0;
+        transform:translate(-50%,-130px) scale(1.5);
+    }
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:800px){
+
+    .memory-grid{
+        grid-template-columns:1fr;
+        gap:40px;
+    }
+
+    .memory:nth-of-type(even) .memory-grid{
+        direction:ltr;
+    }
+
+    .memory-photo{
+        height:500px;
+    }
+
+    .special-grid{
+        grid-template-columns:1fr;
+    }
+
+    .double-grid{
+        grid-template-columns:1fr;
+    }
+
+    .double-photo-card{
+        height:500px;
+    }
+
+    .double-photo-card:first-child{
+        transform:none;
+    }
+
+    .letter{
+        padding:40px 25px;
+    }
+
+    .letter h2{
+        font-size:50px;
+    }
+
+    .final-photo-box{
+        height:600px;
+    }
+
+    .final-photo-overlay h2{
+        font-size:55px;
+    }
+
+}
+
+@media(max-width:500px){
+
+    .intro h1{
+        font-size:70px;
+    }
+
+    .hero h2{
+        font-size:65px;
+    }
+
+    .memory-text h2{
+        font-size:50px;
+    }
+
+    .memory-photo{
+        height:430px;
+    }
+
+    .cake{
+        transform:scale(.85);
+    }
+
+    .couple h2{
+        font-size:65px;
+    }
+
+    .final h2{
+        font-size:70px;
+    }
+
+}
+</style>
+</head>
+
+<body>
+
+<!-- PROGRESS -->
+<div class="progress" id="progress"></div>
+
+
+<!-- INTRO -->
+
+<div class="intro" id="intro">
+
+    <div class="intro-content">
+
+        <div class="intro-small">
+            A LITTLE SURPRISE FOR
+        </div>
+
+        <h1>Khushu</h1>
+
+        <div class="intro-name">
+            FROM OMIII ❤️
+        </div>
+
+        <button class="open-btn" onclick="enterWebsite()">
+            Open Your Surprise 💖
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content reveal">
+
+        <div class="hero-heart">
+            ❤️
+        </div>
+
+        <div class="small-title">
+            Today is your day
+        </div>
+
+        <h2>
+            Happy<br>
+            Birthday<br>
+            Khushu
+        </h2>
+
+        <p>
+            A little website made with a lot of love.
+        </p>
+
+        <div class="scroll-text">
+            SCROLL TO BEGIN ↓
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- LOVE INTRO -->
+
+<section class="love-section">
+
+    <div class="container">
+
+        <div class="love-card reveal">
+
+            <div class="heart">
+                💗
+            </div>
+
+            <div class="small-title">
+                For the girl who makes everything special
+            </div>
+
+            <h2>
+                To My Khushu
+            </h2>
+
+            <p>
+                Some people make ordinary days feel beautiful.
+                You are one of those people for me.
+                So today, I wanted to make something just for you.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- MEMORY 1 -->
+
+<section class="memory">
+
+    <div class="container">
+
+        <div class="memory-grid reveal">
+
+            <div class="memory-photo">
+
+                <img src="photo1.jpeg">
+
+                <div class="photo-glow"></div>
+
+                <div class="memory-number">
+                    01
+                </div>
+
+            </div>
+
+            <div class="memory-text">
+
+                <div class="small-title">
+                    One of my favourite views
+                </div>
+
+                <h2>
+                    That smile.
+                </h2>
+
+                <p>
+                    I don't know how you do it,
+                    but your smile can instantly make
+                    a bad day feel a little better.
+                </p>
+
+                <div class="quote">
+                    "If happiness had a face, I'd choose yours."
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- STORY -->
+
+<section class="story">
+
+    <div class="container">
+
+        <div class="story-center reveal">
+
+            <div class="small-title">
+                Our little story
+            </div>
+
+            <div class="story-line">
+                It started with two people...
+                <span>and became something special.</span>
+            </div>
+
+            <p class="story-small">
+                Maybe we don't have a perfect story.
+                But honestly, I don't need a perfect one.
+                I just want more moments with you.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- MEMORY 2 -->
+
+<section class="memory">
+
+    <div class="container">
+
+        <div class="memory-grid reveal">
+
+            <div class="memory-photo">
+
+                <img src="photo2.jpeg">
+
+                <div class="photo-glow"></div>
+
+                <div class="memory-number">
+                    02
+                </div>
+
+            </div>
+
+            <div class="memory-text">
+
+                <div class="small-title">
+                    A moment worth keeping
+                </div>
+
+                <h2>
+                    You make moments memorable.
+                </h2>
+
+                <p>
+                    It's never really about where we are.
+                    It's about who I'm with.
+                    And being with you is always my favourite part.
+                </p>
+
+                <div class="quote">
+                    "Anywhere feels like somewhere special with you."
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SPECIAL THINGS -->
+
+<section class="special">
+
+    <div class="container">
+
+        <div class="special-heading reveal">
+
+            <div class="small-title">
+                Why you are special
+            </div>
+
+            <h2 class="title">
+                It's the little things.
+            </h2>
+
+        </div>
+
+        <div class="special-grid">
+
+            <div class="special-card reveal">
+
+                <div class="special-icon">
+                    🌙
+                </div>
+
+                <h3>
+                    Your Presence
+                </h3>
+
+                <p>
+                    Somehow everything feels calmer
+                    when you're around.
+                </p>
+
+            </div>
+
+
+            <div class="special-card reveal">
+
+                <div class="special-icon">
+                    ✨
+                </div>
+
+                <h3>
+                    Your Smile
+                </h3>
+
+                <p>
+                    One smile from you can change
+                    the entire mood of my day.
+                </p>
+
+            </div>
+
+
+            <div class="special-card reveal">
+
+                <div class="special-icon">
+                    ❤️
+                </div>
+
+                <h3>
+                    Your Heart
+                </h3>
+
+                <p>
+                    The kindness and warmth you have
+                    is something I genuinely admire.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FULL PHOTO -->
+
+<section
+    class="full-photo"
+    style="background-image:url('photo3.jpeg');"
+>
+
+    <div class="full-photo-content reveal">
+
+        <div class="small-title">
+            A memory I would keep forever
+        </div>
+
+        <h2>
+            You & Me.
+        </h2>
+
+        <p>
+            Simple moments. Beautiful memories.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- MEMORY 3 -->
+
+<section class="memory">
+
+    <div class="container">
+
+        <div class="memory-grid reveal">
+
+            <div class="memory-photo">
+
+                <img src="photo4.jpeg">
+
+                <div class="photo-glow"></div>
+
+                <div class="memory-number">
+                    03
+                </div>
+
+            </div>
+
+            <div class="memory-text">
+
+                <div class="small-title">
+                    Another little memory
+                </div>
+
+                <h2>
+                    Keep smiling.
+                </h2>
+
+                <p>
+                    Because honestly, that is one of
+                    the things I never want to see disappear.
+                </p>
+
+                <div class="quote">
+                    "Your happiness matters to me."
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SHORT LETTER -->
+
+<section class="letter-section">
+
+    <div class="letter reveal">
+
+        <div class="letter-top">
+            A SMALL LETTER FROM OMIII
+        </div>
+
+        <h2>
+            Dear Khushu ❤️
+        </h2>
+
+        <div class="letter-text" id="letterText"></div>
+
+        <div class="signature">
+            — Omiii ❤️
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- TWO PHOTOS -->
+
+<section class="double-photo">
+
+    <div class="container">
+
+        <div class="small-title reveal">
+            Two little pieces of happiness
+        </div>
+
+        <h2 class="title reveal">
+            Memories.
+        </h2>
+
+        <div class="double-grid" style="margin-top:60px;">
+
+            <div class="double-photo-card reveal">
+
+                <img src="photo5.jpeg">
+
+                <div class="double-caption">
+                    <span>
+                        One moment ❤️
+                    </span>
+                </div>
+
+            </div>
+
+
+            <div class="double-photo-card reveal">
+
+                <img src="photo6.jpeg">
+
+                <div class="double-caption">
+                    <span>
+                        Another memory ✨
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- DREAM -->
+
+<section class="dream">
+
+    <div class="container">
+
+        <div class="dream-content reveal">
+
+            <div class="small-title">
+                Things I wish for you
+            </div>
+
+            <h2>
+                More smiles.<br>
+                More happiness.<br>
+                More beautiful days.
+            </h2>
+
+            <p>
+                And hopefully, many more memories
+                together.
+            </p>
+
+            <div>
+
+                <span class="dream-word">
+                    Happiness
+                </span>
+
+                <span class="dream-word">
+                    Peace
+                </span>
+
+                <span class="dream-word">
+                    Love
+                </span>
+
+                <span class="dream-word">
+                    Success
+                </span>
+
+                <span class="dream-word">
+                    Smiles
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- MEMORY 4 -->
+
+<section class="memory">
+
+    <div class="container">
+
+        <div class="memory-grid reveal">
+
+            <div class="memory-photo">
+
+                <img src="photo7.jpeg">
+
+                <div class="photo-glow"></div>
+
+                <div class="memory-number">
+                    04
+                </div>
+
+            </div>
+
+            <div class="memory-text">
+
+                <div class="small-title">
+                    If I could freeze a moment
+                </div>
+
+                <h2>
+                    I'd keep this.
+                </h2>
+
+                <p>
+                    Not because everything is perfect,
+                    but because moments like these
+                    are the ones that become memories.
+                </p>
+
+                <div class="quote">
+                    "Some memories deserve to stay forever."
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SECOND STORY -->
+
+<section class="story">
+
+    <div class="container">
+
+        <div class="story-center reveal">
+
+            <div class="small-title">
+                One more thing
+            </div>
+
+            <div class="story-line">
+                No matter how many birthdays come...
+                <span>I hope you always stay this beautiful.</span>
+            </div>
+
+            <p class="story-small">
+                Beautiful not only because of how you look,
+                but because of the person you are.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- MEMORY 5 -->
+
+<section class="memory">
+
+    <div class="container">
+
+        <div class="memory-grid reveal">
+
+            <div class="memory-photo">
+
+                <img src="photo8.jpeg">
+
+                <div class="photo-glow"></div>
+
+                <div class="memory-number">
+                    05
+                </div>
+
+            </div>
+
+            <div class="memory-text">
+
+                <div class="small-title">
+                    And this one
+                </div>
+
+                <h2>
+                    Just because it's you.
+                </h2>
+
+                <p>
+                    There doesn't always need to be
+                    a reason for keeping a memory.
+                    Sometimes, someone is simply worth remembering.
+                </p>
+
+                <div class="quote">
+                    "And you are."
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- REPEATED PHOTO -->
+
+<section
+    class="full-photo"
+    style="background-image:url('photo1.jpeg');"
+>
+
+    <div class="full-photo-content reveal">
+
+        <div class="small-title">
+            If this moment could speak
+        </div>
+
+        <h2>
+            It would say...
+        </h2>
+
+        <p>
+            Happy Birthday, beautiful. ❤️
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- CAKE -->
+
+<section class="cake-section">
+
+    <div class="cake-area reveal">
+
+        <div class="small-title">
+            Make a wish
+        </div>
+
+        <h2>
+            One more candle for you 🎂
+        </h2>
+
+        <p>
+            Close your eyes and make a beautiful wish.
+        </p>
+
+        <div class="cake">
+
+            <div class="candle">
+
+                <div class="flame"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- COUPLE -->
+
+<section class="couple">
+
+    <div class="container reveal">
+
+        <div class="small-title">
+            Two names
+        </div>
+
+        <h2>
+            Omiii ❤️ Khushu
+        </h2>
+
+        <p>
+            ONE BEAUTIFUL CHAPTER AT A TIME
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- FINAL PHOTO -->
+
+<section class="final-photo">
+
+    <div class="final-photo-box reveal">
+
+        <img src="photo2.jpeg">
+
+        <div class="final-photo-overlay">
+
+            <div class="small-title">
+                One last memory
+            </div>
+
+            <h2>
+                Stay happy.
+            </h2>
+
+            <p>
+                Always keep that beautiful smile.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FINAL MESSAGE -->
+
+<section class="final">
+
+    <div class="final-content reveal">
+
+        <div class="final-heart">
+            ❤️
+        </div>
+
+        <div class="small-title">
+            This is the end of the little surprise
+        </div>
+
+        <h2>
+            I Love You,<br>
+            Khushu.
+        </h2>
+
+        <p>
+            Happy Birthday to someone who means
+            more than words can properly explain.
+            <br><br>
+            May this year bring you everything
+            beautiful that you deserve.
+        </p>
+
+        <div class="final-sign">
+            — Omiii ❤️
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+    Made with ❤️ by Omiii for Khushu
+</footer>
+
+
+<script>
+
+/* OPEN WEBSITE */
+
+function enterWebsite(){
+
+    document
+        .getElementById("intro")
+        .classList.add("hide");
+
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    });
+
+}
+
+
+/* SCROLL REVEAL */
+
+const revealElements =
+document.querySelectorAll(".reveal");
+
+const observer =
+new IntersectionObserver(
+
+    (entries)=>{
+
+        entries.forEach(entry=>{
+
+            if(entry.isIntersecting){
+
+                entry.target
+                    .classList
+                    .add("show");
+
+            }
+
+        });
+
+    },
+
+    {
+        threshold:.15
+    }
+
+);
+
+revealElements.forEach(el=>{
+    observer.observe(el);
+});
+
+
+/* LETTER */
+
+const letterText =
+document.getElementById("letterText");
+
+const letter =
+`Happy Birthday to the most special person in my life.
+
+Your smile makes my world a little brighter.
+I hope you always stay happy and keep smiling.
+
+I'm really lucky to have you in my life.
+
+Happy Birthday, Khushu. ❤️`;
+
+let typed = false;
+
+const letterObserver =
+new IntersectionObserver(
+
+    entries=>{
+
+        entries.forEach(entry=>{
+
+            if(
+                entry.isIntersecting &&
+                !typed
+            ){
+
+                typed = true;
+
+                let i = 0;
+
+                function type(){
+
+                    if(i < letter.length){
+
+                        letterText.innerHTML +=
+                            letter.charAt(i);
+
+                        i++;
+
+                        setTimeout(type,25);
+
+                    }
+
+                }
+
+                type();
+
+            }
+
+        });
+
+    },
+
+    {
+        threshold:.4
+    }
+
+);
+
+letterObserver.observe(
+    document.querySelector(".letter")
+);
+
+
+/* FLOATING HEARTS */
+
+function createHeart(){
+
+    const heart =
+    document.createElement("div");
+
+    heart.className =
+        "floating-heart";
+
+    const hearts =
+        ["❤️","💗","💕","💖","✨"];
+
+    heart.innerHTML =
+        hearts[
+            Math.floor(
+                Math.random()*hearts.length
+            )
+        ];
+
+    heart.style.left =
+        Math.random()*100 + "vw";
+
+    heart.style.fontSize =
+        (12 + Math.random()*20) + "px";
+
+    heart.style.animationDuration =
+        (5 + Math.random()*4) + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(()=>{
+        heart.remove();
+    },9000);
+
+}
+
+setInterval(createHeart,1200);
+
+
+/* CLICK HEART */
+
+document.addEventListener(
+    "click",
+    function(e){
+
+        if(
+            e.target.tagName === "BUTTON"
+        ){
+            return;
+        }
+
+        const heart =
+            document.createElement("div");
+
+        heart.className =
+            "click-heart";
+
+        heart.innerHTML =
+            ["❤️","💗","✨"][
+                Math.floor(Math.random()*3)
+            ];
+
+        heart.style.left =
+            e.clientX + "px";
+
+        heart.style.top =
+            e.clientY + "px";
+
+        document.body.appendChild(heart);
+
+        setTimeout(()=>{
+            heart.remove();
+        },1000);
+
+    }
+);
+
+
+/* SCROLL PROGRESS */
+
+window.addEventListener(
+    "scroll",
+    function(){
+
+        const scrollTop =
+            window.scrollY;
+
+        const documentHeight =
+            document.documentElement.scrollHeight -
+            window.innerHeight;
+
+        const progress =
+            (scrollTop/documentHeight)*100;
+
+        document
+            .getElementById("progress")
+            .style.width =
+            progress + "%";
+
+    }
+);
+
+</script>
+
+</body>
+</html>
